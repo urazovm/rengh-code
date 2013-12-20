@@ -1,0 +1,2 @@
+class Chinese extends Person{
+}

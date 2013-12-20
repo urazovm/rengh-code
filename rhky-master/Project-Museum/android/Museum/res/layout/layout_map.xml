@@ -1,0 +1,124 @@
+<!-- 地图 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/buju_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_title"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_menu_list"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/background_title_btn"
+                android:src="@drawable/btn_list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="展区地图"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/background_title_btn"
+                android:src="@drawable/btn_search" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_map" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView_map"
+                android:layout_alignTop="@+id/imageView_map"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/btn_map_future" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="163dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="@drawable/btn_map_future" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView_map"
+                android:layout_marginBottom="34dp"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:background="@drawable/btn_map_future" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:background="@drawable/btn_map_future" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="71dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:background="@drawable/btn_map_future" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/btn_map_future" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

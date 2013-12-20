@@ -1,0 +1,4 @@
+class MsPrinter extends Printer
+{
+	
+}
